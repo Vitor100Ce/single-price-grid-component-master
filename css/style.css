@@ -19,11 +19,17 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .container-main{
     width: 40rem;
+    box-shadow: 2px 3px 28px -7px rgba(0,0,0,0.47);
+    border-radius: 10px;
 }
+
+/* Top */
 
 .top{
     padding: 2.2rem;
@@ -48,8 +54,88 @@ body{
     color: hsl(218, 22%, 67%);
 }
 
+/* Cards */
+
 .container-card{
     display: flex;
-    background-color: aqua;
-    border-radius: 0 0 10px 10px;
+    height: 15rem;
 }
+.card{
+    width: 20rem;
+    padding: 2.5rem;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.card__title{
+    font-size: 18px;
+    margin-bottom: 1rem;
+
+}
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+    position: relative;
+    
+}
+
+.card__price{
+    margin-bottom: .5rem;
+   
+}
+
+.card__price span{
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.card__price{
+    color: hsl(204, 43%, 93%);
+}
+
+.card__price--terms{
+    font-size: 15px;
+}
+
+.card-2{
+    background-color: hsl(179, 64%, 52%);
+    border-radius: 0 0 10px 0;
+   
+}
+
+.btn{
+    align-self: center;
+    background-color: hsl(71, 73%, 54%);
+    border: 1px solid hsl(71, 100%, 76%);
+    border-radius: 5px;
+    height: 1rem;
+    width: 14rem;
+    padding: .8rem 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.4rem;
+    box-shadow: 2px 3px 28px -7px rgba(0,0,0,0.47);
+    transition: all .2s;
+}
+
+.btn:hover{
+    background-color: hsl(71, 100%, 76%);
+}
+
+.card__extras{
+    margin-bottom: .2rem;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 35rem){
+  
+
+
+}
+
